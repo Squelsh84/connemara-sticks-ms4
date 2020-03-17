@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/Squelsh84/connemara-sticks-ms4.svg?branch=master)](https://travis-ci.com/Squelsh84/connemara-sticks-ms4)
+
 # [Connemara Sticks]()
 
 - Please find a link to the live website [here]()
