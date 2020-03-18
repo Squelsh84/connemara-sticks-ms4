@@ -21,7 +21,7 @@
 
   <!--NAVBAR-->
   <nav class="navbar navbar-expand-md fixed-top navbar-dark">
-    <a class="navbar-brand" href="">Connemara Sticks</a>
+    <a class="navbar-brand" href="/">Connemara Sticks</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -41,10 +41,10 @@
             Sticks
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="">Blackthorn</a>
-            <a class="dropdown-item" href="#">Hazel</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Holly</a>
+            {% for category in links %}
+            <a class="dropdown-item" href="{{category.get_url}}">{{ category.name }}</a>
+            {% endfor %}
+            <a class="dropdown-item" href="{% url 'index' %}">All Products</a>
           </div>
         </li>
         <li class="nav-item">
