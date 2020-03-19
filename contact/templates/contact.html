@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %} Contact Us {% endblock %}
+
+{% block content%}
+<div class="jumbotron jumbotron-contact">
+  <div class="container-fluid">
+    <div class="opaque-overlay">
+      <h2>Contact Us</h2>
+    </div>
+    <div>
+      <p>We always love to hear from you.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container mt-5">
+
+  <div class="row" style="height:550px;">
+    <div class="col-md-6">
+      <div class="">
+        <h2 class="text-uppercase mt-4 font-weight-bold">GET IN TOUCH</h2>
+
+        <i class="fas fa-phone mt-3"></i> <a href="tel:+">(+353) 088232342</a><br>
+        <i class="fa fa-envelope mt-3"></i> <a href="">connemarasticks@gmail.com</a><br>
+        <i class="fas fa-globe mt-3"></i> Knocknacarra, Galway.<br>
+
+      </div>
+    </div>
+    <div class="col-md-6">
+      <form action="">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="form-group">
+              <input type="text" class="form-control mt-2" placeholder="Firstname" required>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="form-group">
+              <input type="text" class="form-control mt-2" placeholder="Surname" required>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="form-group">
+              <input type="email" class="form-control mt-2" placeholder="Email" required>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="form-group">
+              <input type="number" class="form-control mt-2" placeholder="Telefone" required>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-group">
+              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="3"
+                required></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-light" type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
