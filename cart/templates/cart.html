@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Cart {% endblock %}
+
+{% block content %}
+
+<div class="jumbotron jumbotron-about">
+  <div class="container-fluid">
+    <div class="opaque-overlay">
+      <h2>Shopping Cart</h2>
+    </div>
+    <div>
+      <p>Remember, The magic begins when you take the stick<br> for a walk.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="text-center">
+    <br>
+    <div class="text-center product_title">
+      Your shopping cart
+      <hr class="hr-primary w-15 hr-xl ml-0 mb-5">
+    </div>
+  </div>
+  <div class="row mx-auto">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center">
+      <table class="table cart_table">
+        <thead class="cart_thead">
+          <tr>
+            <th colspan="4">
+              Your items
+            </th>
+          </tr>
+        </thead>
+
+        <tr>
+          <td>
+            <a href="">
+              <img src="" width="100" height="100" alt="">
+            </a>
+          </td>
+          <td class="text-left">
+
+            <br>
+            SKU:
+            <br>
+            Unit Price: $
+            <br>
+            Qty:
+          </td>
+          <td>
+            $
+            &nbsp;<a href=""><i class="fas fa-minus-circle cart_icon"></i></a>
+            &nbsp;<a href=""><i class="fas fa-trash-alt cart_icon"></i></a>
+            &nbsp;<a href=""><i class="fas fa-trash-alt cart_icon"></i></a>
+          </td>
+
+        </tr>
+
+
+      </table>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center">
+      <table class="table cart_table">
+        <thead class="cart_thead">
+          <tr>
+            <th>
+              Check out
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Please review your cart items before proceeding with the payment.
+            </td>
+          </tr>
+          <tr>
+            <td class="text-left">
+              Your total is: <strong></strong>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="mx-auto">
+        <form class="" action="" method="">
+
+        </form>
+        <a href="{% url 'index' %}" style="text-decoration: none;">
+          <button type="button" class="btn btn-lg btn-block bg-dark text-white">
+            Continue Shopping
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{%endblock%}
