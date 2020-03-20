@@ -59,7 +59,7 @@
           <!-- Product Meta Data -->
           <div class="product-meta-data">
             <div class="line"></div>
-            <p class="product-price">{{product.price}}</p>
+            <p class="product-price">€{{product.price}}</p>
             <a href="product-details.html">
               <h6>{{product.name}}</h6>
             </a>
@@ -86,7 +86,7 @@
           {% if product.stock <= 0 %}
           <p class="text-justify product_text"><b>Out of Stock</b></p>
           {% else %}
-          <a href="">
+          <a href="{% url 'add_cart' product.id %}">
             <button type="button" name="button" class="btn btn-warning">
               Add to Cart
             </button>
