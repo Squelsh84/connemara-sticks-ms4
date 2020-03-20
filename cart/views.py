@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Cart, CartItem
-from products.models import Product
+from products.models import Product, Category
 from django.core.exceptions import ObjectDoesNotExist
 # Create your views here.
 
