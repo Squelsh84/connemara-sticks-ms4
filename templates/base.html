@@ -53,6 +53,11 @@
         <li class="nav-item">
           <a class="nav-link " href="{% url 'contact' %}">Contact</a>
         </li>
+        {% if item_count > 0 %}
+        <li class="nav-item">
+          <a class="nav-link " href=""><i class="fas fa-shopping-cart"></i>({{item_count}})</a>
+        </li>
+        {% endif %}
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <div class="input-group">
