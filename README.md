@@ -19,7 +19,14 @@
     - [Current Features](#current-features)
     - [Future Features](#future-features)
 
-4. [Database Design](#database-design)
+4. [Apps](#apps)
+    - [Home App](#home-app)
+    - [About App](#about-app)
+    - [Products App](#products-app)
+    - [Blog App](#blog-app)
+    - [Cart App](#cart-app)
+    - [Accounts App](#accounts-app)
+    - [Contact App](#contact-app)
 
 5. [Technologies Used](#technologies-used)
     - [Languages](#languages)
@@ -112,9 +119,33 @@ I want to be know and choose what wood I want it to be.
 
 
 
-# Database Design
+# Apps
 
+## Home App
 
+The home app is the landing page of the website. It displays some of the business products as well as displaying blog entries. There is also a jumbotron with a button to hopefully get customers to look around the site.
+
+## About App
+
+The about app introduces the people begnd the business and some of some information about what materials they use. 
+
+## Products App
+
+## Blog App
+
+The blog app displays blogs about different topics such as walking, stick making, woods used and information on making your own stick. Its a great way to rank higher with key words in SEO's.
+
+## Cart App
+
+The cart app holds the items when added to the cart. If the user is in session then it keeps the items in the cart.
+
+## Account App
+
+The account app lets the user login and store his data. It keeps a record of previous purchases.
+
+## Contact App
+
+The contact app allows visitors to the site to contact the businesses with enquires or special request projects.
 
 # Technologies Used
 
