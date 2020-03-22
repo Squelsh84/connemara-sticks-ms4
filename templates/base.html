@@ -59,7 +59,7 @@
         </li>
         {% endif %}
       </ul>
-      <form class="form-inline my-2 my-lg-0">
+      <form class="form-inline my-2 my-lg-0" action="{% url 'search' %}" , method="GET">
         <div class="input-group">
           <input type="text" name="title" class="form-control" placeholder="Search">
           <div class="input-group-append">
