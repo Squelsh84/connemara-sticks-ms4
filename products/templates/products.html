@@ -6,8 +6,51 @@
 
 {% block content%}
 
-<h1>Products
+<div class="jumbotron jumbotron-products">
+  <div class="container-fluid">
+    <div class="opaque-overlay">
+      <h2>Connemara Sticks</h2>
+    </div>
+    <div>
+      <p>Every stick from start to finish has been sourced, worked on and<br> finished by us here.</p>
+    </div>
+  </div>
+</div>
 
-</h1>
+
+
+
+<section id="home-products">
+  <div class="container">
+    <div class="row">
+      {% for product in products %}
+      <div class="col-9 mx-auto col-md-6 col-lg-3">
+        <div class="card mb-4" style="border-color: transparent;">
+          <a href="{{product.get_url}}">
+            <img src="{{product.image.url}}" class="card-img-top" alt="{{product.name}}">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">{{product.name}}</h4>
+            <p class="card-text">
+              {{product.description|slice:":70" }} ... </p>
+            <div class="buy d-flex justify-content-between align-items-center">
+              <div class="price text-success">
+                <h5 class="mt-4">€ {{product.price}}</h5>
+              </div>
+              <a href="{% url 'add_cart' product.id %}">
+                <button type="button" name="button" class="btn btn-warning">
+                  Add to Cart
+                </button>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      {%endfor%}
+    </div>
+  </div>
+</section>
+
 
 {% endblock %}
