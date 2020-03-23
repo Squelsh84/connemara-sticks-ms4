@@ -246,8 +246,18 @@ The following instructions were taken from [GitHib Help]( https://help.github.co
 
 ## Content
 
+- Some information was taken from [Stickmaking Handbook](https://www.ebay.co.uk/itm/174162686143)
+- Images were taken from [pixabay](https://pixabay.com/)
   
 ## Code
 
+- [Django 2.2 Documentation](https://docs.djangoproject.com/en/2.2/).
+- [Brad Traversy - YouTube Django Crash Course](https://www.youtube.com/watch?v=e1IyzVyrLSU).
+- [Brad Traversy - Udemy Django Dev To Development](https://www.udemy.com/course/python-django-dev-to-deployment/).
+- [Corey Schafer - YouTube Django Playlist](https://www.youtube.com/watch?v=UmljXZIypDc&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p).
+- [Real Python - Build A Portfolio App](https://realpython.com/get-started-with-django-1/).
+- [Coding Point - Django Ecommerce Web App](https://www.youtube.com/playlist?list=PLPp4GCMxKSjCM9AvhmF9OHyyaJsN8rsZK).
+- [Pretty Printed - YouTube Django Playlist](https://www.youtube.com/watch?v=QVX-etwgvJ8&list=PLXmMXHVSvS-DQfOsQdXkzEZyD0Vei7PKf&index=1).
+- [The Zero2Launch Team - Udemy Django](https://www.udemy.com/course/build-ecommerce-website-to-master-django-and-python/).
 
 ## Acknowledgements
