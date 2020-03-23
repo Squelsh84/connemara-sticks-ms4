@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %} Sign Up {% endblock %}
+
+{% block content%}
+<div class="jumbotron jumbotron-product">
+  <div class="container-fluid">
+    <div class="opaque-overlay">
+      <h2></h2>
+    </div>
+    <div>
+      <p></p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div>
+  {% if not form.is_valid %}
+  <div class="mx-auto">
+    <br>
+    <div class="title text-center">
+      <h2>Create A New Account</h2>
+    </div>
+    <hr class="hr-primary w-15 hr-xl ml-0 mb-5">
+    <br>
+    <div class="col-9 col-sm-9 col-md-6 col-lg-5 mx-auto bg-light">
+      <br>
+      <p>Enter the following information to create a new account</p>
+      <form method="POST">
+        {% csrf_token %}
+        <p>{{ form }}</p>
+        <button type="submit" name="button" class="btn btn-secondary">Sign Up</button>
+      </form>
+      <br>
+    </div>
+  </div>
+  {% else %}
+  <div class="mx-auto">
+    <br>
+    <h1 class="product_title text-center">
+      Your account has been successfully created.
+    </h1>
+    <br>
+    <div class="container">
+      <p>
+        Dear Customer,
+        <br>
+        <br>
+        Your account has been created and it is ready to use.
+        <br>
+        <a href="{% url 'index' %}">Continue shopping</a>
+      </p>
+    </div>
+  </div>
+
+  {% endif %}
+</div>
+{% endblock %}
