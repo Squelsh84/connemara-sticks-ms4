@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Cart, CartItem
-from products.models import Product, Category
+from products.models import Product
 from django.core.exceptions import ObjectDoesNotExist
 # Create your views here.
 
@@ -47,7 +47,7 @@ def cart_detail(request, total=0, counter=0, cart_items=None):
     except ObjectDoesNotExist:
         pass
 
-    return render(request, 'cart.html', dict(cart_item=cart_items, total=total, counter=counter))
+    return render(request, 'cart.html', dict(cart_items=cart_items, total=total, counter=counter))
 
 
 def cart_remove(request, product_id):
