@@ -21,6 +21,7 @@
 
 
 {% if not cart_items %}
+
 <div class="text-center">
   <br>
   <h1 class="text-center product_title">
@@ -36,8 +37,10 @@
   <div class="text-center">
     <br>
     <div class="text-center product_title">
-      Your shopping cart
-      <hr class="hr-primary w-15 hr-xl ml-0 mb-5">
+      <div class="title text-center">
+        <h2>Your Shopping Cart</h2>
+      </div>
+
     </div>
   </div>
   <div class="row mx-auto">
@@ -113,16 +116,15 @@
         </tbody>
       </table>
       <div class="mx-auto">
-        <form class="" action="" method="POST">
 
-        </form>
         <a href="{% url 'index' %}" style="text-decoration: none;">
-          <button type="button" class="btn btn-lg btn-block bg-dark text-white">
+          <button type="button" class="btn btn-lg btn-block bg-warning text-white">
             Continue Shopping
           </button>
         </a>
       </div>
     </div>
   </div>
-  {% endif %}
-  {% endblock %}
+</div>
+{% endif %}
+{% endblock %}
