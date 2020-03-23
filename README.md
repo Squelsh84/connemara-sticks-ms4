@@ -164,8 +164,10 @@ The contact app allows visitors to the site to contact the businesses with enqui
 
 ## Hosting Platforms & Database
 
-
 - [Heroku](https://www.heroku.com/) Cloud based hosting service used.
+- [SQLite](https://www.sqlite.org/index.html) Default Django database used.
+- [PostgreSQL](https://www.postgresql.org/) Database used for production on deployment to Heroku.
+- [AWS S3](https://aws.amazon.com/s3/) Cloud based storage for media files.
 
 ## Frontend Resources
 
