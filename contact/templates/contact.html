@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
-
+{% load crispy_forms_tags %}
 
 {% block title %} Contact Us {% endblock %}
 
@@ -32,38 +32,12 @@
       </div>
     </div>
     <div class="col-md-6">
-      <form action="">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="form-group">
-              <input type="text" class="form-control mt-2" placeholder="Firstname" required>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="form-group">
-              <input type="text" class="form-control mt-2" placeholder="Surname" required>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="form-group">
-              <input type="email" class="form-control mt-2" placeholder="Email" required>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="form-group">
-              <input type="number" class="form-control mt-2" placeholder="Telefone" required>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="form-group">
-              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="3"
-                required></textarea>
-            </div>
-          </div>
-        </div>
-        <div class="col-12">
-          <button class="btn btn-light" type="submit">Send</button>
-        </div>
+      <form method="POST">
+        {% csrf_token %}
+        {{ form | crispy }}
+
+        <button type="submit" class="btn btn-dark btn-block rounded-0 py-2 mt-3">Submit</button>
+
       </form>
     </div>
   </div>
