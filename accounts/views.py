@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import Group, User
 from django.contrib.auth.forms import AuthenticationForm
-from django.contrib.auth import login, authenticate
+from django.contrib.auth import login, logout, authenticate
 from .forms import SignUpForm
 
 # Create your views here.
@@ -37,3 +37,8 @@ def SignInView(request):
     else:
         form = AuthenticationForm()
     return render(request, 'login.html', {'form': form})
+
+
+def SignOutView(request):
+    logout(request)
+    return redirect('index')
