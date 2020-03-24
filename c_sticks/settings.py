@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'contact.apps.ContactConfig',
     'cart.apps.CartConfig',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -138,3 +139,6 @@ STATICFILES_DIRS = [
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
 MEDIA_URL = '/media/'
+
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
