@@ -59,6 +59,48 @@
 }
 
 
+
+
+/*-- Home/Index --*/
+
+.product-title {
+padding-top: 1.5rem;
+}
+
+
+.feature {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.feature i {
+  margin-bottom: 20px;
+  font-size: 45px;
+  line-height: 45px;
+  color: #B28564;
+}
+
+.feature .btn {
+  background-color: white;
+  border-color: white;
+  border-radius: 15px;
+  min-width: 100px;
+  font-weight: bold;
+  margin-top: 1px;
+  color: #f05f40;
+}
+
+.container-product {
+  padding-bottom: 10px;
+}
+
+
+#home-products {
+  padding-top: 5rem;
+}
+
+
+
 /*-- About --*/
 
 .jumbotron-about {
@@ -159,59 +201,10 @@
   position: relative;
   height: 60vh; 
 }
-/* Features */
-
-.feature {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.feature i {
-  margin-bottom: 20px;
-  font-size: 45px;
-  line-height: 45px;
-  color: #B28564;
-}
-
-.feature .btn {
-  background-color: white;
-  border-color: white;
-  border-radius: 15px;
-  min-width: 100px;
-  font-weight: bold;
-  margin-top: 10px;
-  color: #f05f40;
-}
-
-
-.cart_table {
-  min-width: 400px;
-  font-size: 14px;
-}
-
-.cart_thead {
-  font-weight: normal;
-  text-transform: uppercase;
-  letter-spacing: .2em;
-  background-color: #f8f9fa !important;
-}
-
-.cart_icon {
-  text-decoration: none;
-  color: #B28564;
-}
-
-.container-product {
-  padding-bottom: 10px;
-}
-
-
-#home-products {
-  padding-top: 5rem;
-}
 
 
 
+/*-- Contact Page --*/
 
 .contact .info-box {
   color: #444444;
@@ -245,6 +238,24 @@
 
 
 
+/*-- Cart --*/
+
+.cart_table {
+  min-width: 400px;
+  font-size: 14px;
+}
+
+.cart_thead {
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  background-color: #f8f9fa !important;
+}
+
+.cart_icon {
+  text-decoration: none;
+  color: #B28564;
+}
 
 
 
