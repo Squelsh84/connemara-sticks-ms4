@@ -174,6 +174,16 @@ The contact app allows visitors to the site to contact the businesses with enqui
 - [Google Fonts](https://fonts.google.com/) Used for all fonts.
 - [Font Awesome](https://fontawesome.com/) Used for all icons.
 - [Bootstrap](https://getbootstrap.com/) Used for responsive layout and styling.
+- [Stripe](https://stripe.com/ie)Used to recieve payments.
+- [Juicer](https://www.juicer.io/)Used to display social media.
+
+## Backend Resources
+
+- [Django](https://www.djangoproject.com/)Web framework.
+- [Pillow](https://pypi.org/project/Pillow/)Used for images.
+- [AWS Storages](https://django-storages.readthedocs.io/en/latest/backends/amazon-S3.html)Django's storage.
+- [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)Renders Django forms.
+- [Heroku](https://heroku.com)Used for deployment.
 
 ## Design Tools
 
