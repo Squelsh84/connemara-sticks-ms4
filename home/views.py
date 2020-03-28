@@ -16,15 +16,6 @@ def index(request, category_slug=None):
     return render(request, 'index.html', {'category': category_page, 'products': products})
 
 
-def productPage(request, category_slug, product_slug):
-    try:
-        product = Product.objects.get(
-            category__slug=category_slug, slug=product_slug)
-    except Exception as e:
-        raise e
-    return render(request, 'product.html', {'product': product})
-
-
 def search(request):
     products = Product.objects.filter(name__contains=request.GET['title'])
     return render(request, 'products.html', {'products': products})
