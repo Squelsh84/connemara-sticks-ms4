@@ -20,39 +20,31 @@
 
 <!-- Products -->
 
-<section class="container py-7" id="  home-products ">
+
+
+<section class="container py-7">
   <div class="title text-center">
     <h2>Products</h2>
   </div>
   <hr class="hr-primary w-15 hr-xl ml-0 mb-5">
-  <div class="container">
-    <div class="row text-center">
-      {% for product in products %}
-      <div class="col-9 mx-auto col-md-6 col-lg-3">
-        <div class="card mb-4" style="border-color: transparent;">
-          <a href="{{product.get_url}}">
-            <img src="{{product.image.url}}" class="card-img-top" alt="{{product.name}}">
-          </a>
-          <div class="card-body">
-            <h4 class="card-title">{{product.name}}</h4>
-            <p class="card-text">
-              {{product.description|slice:":70" }} ... </p>
-            <div class="buy d-flex justify-content-between align-items-center">
-              <div class="price text-success">
-                <h5 class="mt-4">€ {{product.price}}</h5>
-              </div>
-              <a href="{% url 'add_cart' product.id %}">
-                <button type="button" name="button" class="btn btn-warning">
-                  Add to Cart
-                </button>
-              </a>
-
-            </div>
-          </div>
-        </div>
-      </div>
-      {%endfor%}
+  <!-- Start List Product -->
+  {% for product in products %}
+  <div class="ht__list__product col-12 mx-auto col-md-12 col-lg-12 mt-3">
+    <div class="ht__list__thumb">
+      <a href="{{product.get_url}}"><img class="img-products" src="{{product.image.url}}" alt="{{product.name}}"></a>
     </div>
+    <div class="htc__list__details">
+      <h2><a href="product-details.html">{{product.name}}</a></h2>
+      <div class="price">
+        <h5 class="mt-4">€ {{product.price}}</h5>
+      </div>
+      <p>{{product.description}}</p>
+      <div class="fr__list__btn">
+        <a class="btn btn-warning" href="{% url 'add_cart' product.id %}">Add To Cart</a>
+      </div>
+    </div>
+  </div>
+  {%endfor%}
   </div>
 </section>
 

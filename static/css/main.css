@@ -1,4 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700|Poppins:400,700&display=swap');
 
+
+.body {
+  overflow-x: hidden;
+  font-family: 'Old Standard TT', serif;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  position: relative;
+}
 
 
 /*-- Navbar--*/
@@ -240,6 +249,12 @@ padding-top: 1.5rem;
 }
 
 /*-- Products Page --*/
+
+.img-products{
+  object-fit: contain;
+  min-width: auto;
+  max-width: 400px;
+}
 
 .ht__list__product {
   margin-top: 40px;
