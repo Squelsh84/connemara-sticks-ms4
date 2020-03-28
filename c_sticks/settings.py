@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'contact.apps.ContactConfig',
     'cart.apps.CartConfig',
     'crispy_forms',
+    'django_summernote',
 ]
 
 MIDDLEWARE = [
