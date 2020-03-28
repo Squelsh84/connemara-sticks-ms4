@@ -54,6 +54,8 @@
         <li class="nav-item">
           <a class="nav-link text-light font-weight-bold  " href="{% url 'contact' %}">Contact</a>
         </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
         {% if request.user.is_authenticated and request.user.first_name %}
         <li class="nav-item dropdown">
           <a class="nav-link text-light font-weight-bold ">
@@ -68,12 +70,12 @@
         {% else %}
         <li class="nav-item">
           <a class="nav-link text-light font-weight-bold" href="{% url 'register' %}">
-            Sign Up <i class="fas fa-user-plus"></i>
+            <i class="fas fa-user-plus"></i>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-light font-weight-bold" href="{% url 'login' %}">
-            Log In <i class="fas fa-sign-in-alt"></i>
+            <i class="fas fa-sign-in-alt"></i>
           </a>
         </li>
         {% endif %}
@@ -84,15 +86,16 @@
               class="fas fa-shopping-cart"></i>({{item_count}})</a>
         </li>
         {% endif %}
-      </ul>
-      <form class="form-inline my-2 my-lg-0" action="{% url 'search' %}" , method="GET">
-        <div class="input-group">
-          <input type="text" name="title" class="form-control" placeholder="Search">
+        <form class="form-inline my-2 my-lg-0" action="{% url 'search' %}" , method="GET">
           <div class="input-group-append">
-            <button type="submit" class="btn btn-warning"><i class="fas fa-search"></i></button>
+            <div class=searchnav input-group">
+              <input type="text" name="title" class="search-input" placeholder="Search">
+              <button type="submit" value="Submit Button" class="search-icon btn btn-warning"><i
+                  class="fas fa-search"></i></button>
+            </div>
           </div>
-        </div>
-      </form>
+        </form>
+      </ul>
     </div>
   </nav>
 
