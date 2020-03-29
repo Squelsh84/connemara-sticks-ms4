@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'contact.apps.ContactConfig',
     'cart.apps.CartConfig',
-    'checkout.apps.CheckoutConfig'
+    'checkout.apps.CheckoutConfig',
     'crispy_forms',
     'django_summernote',
 ]
