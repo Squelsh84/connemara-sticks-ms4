@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'contact.apps.ContactConfig',
     'cart.apps.CartConfig',
+    'checkout.apps.CheckoutConfig'
     'crispy_forms',
     'django_summernote',
 ]
@@ -141,5 +142,7 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
 MEDIA_URL = '/media/'
 
+STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE')
+STRIPE_SECRET = os.getenv('STRIPE_SECRET')
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
