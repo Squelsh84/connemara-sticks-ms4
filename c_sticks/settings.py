@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 
-import django_heroku
 import dj_database_url
 import os
 
@@ -32,7 +31,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = os.environ.get("ALLOWED_HOST")
+ALLOWED_HOSTS = ['connemara-sticks.herokuapp.com']
 
 
 # Application definition
@@ -163,6 +162,3 @@ AWS_DEFAULT_ACL = None
 STATICFILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
-
-
-django_heroku.settings(local())
