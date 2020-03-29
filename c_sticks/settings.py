@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['connemara-sticks.herokuapp.com']
+ALLOWED_HOSTS = [os.environ.get("ALLOWED_HOST"), '127.0.0.1']
 
 
 # Application definition
