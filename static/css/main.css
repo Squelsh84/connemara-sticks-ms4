@@ -437,3 +437,14 @@ select.ht__select {
 }
 
 
+.stripe-button-el {
+  width: 100% ;
+  display: block ;
+  background-color: #B28564;
+  margin-bottom: 5px;
+}
+
+.stripe-button-el span {
+  height: 40px;
+  font-size: 16px;
+}
