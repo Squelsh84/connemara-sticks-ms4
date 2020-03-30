@@ -2,7 +2,7 @@
 
 # [Connemara Sticks]()
 
-- Please find a link to the live website [here]()
+- Please find a link to the live website [here](https://connemara-sticks.herokuapp.com/)
 
 ![]()
 
