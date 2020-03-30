@@ -70,12 +70,12 @@
         {% else %}
         <li class="nav-item mr-1">
           <a class="nav-link text-light font-weight-bold" href="{% url 'register' %}">
-            <i class="fas fa-user-plus"> Signup</i>
+            <i class="fas fa-user-plus"></i>Signup
           </a>
         </li>
         <li class="nav-item mr-1">
           <a class="nav-link text-light font-weight-bold" href="{% url 'login' %}">
-            <i class="fas fa-sign-in-alt"> Login</i>
+            <i class="fas fa-sign-in-alt"></i> Login
           </a>
         </li>
         {% endif %}
@@ -87,10 +87,11 @@
         </li>
         {% endif %}
         <form class="form-inline ml-3" action="{% url 'search' %}" , method="GET">
-          <div class="input-group">
-            <input type="text" name="title" class="form-control" placeholder="Search">
-            <div class="input-group-append">
-              <button type="submit" class="btn btn-warning"><i class="fas fa-search"></i></button>
+          <div class="input-group-append">
+            <div class=searchnav input-group">
+              <input type="text" name="title" class="search-input" placeholder="Search">
+              <button type="submit" value="Submit Button" class="search-icon btn btn-warning"><i
+                  class="fas fa-search"></i></button>
             </div>
           </div>
         </form>
