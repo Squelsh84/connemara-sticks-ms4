@@ -19,6 +19,8 @@
   letter-spacing: .1rem;
 }
 
+
+
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
     color: #B28564;
@@ -35,7 +37,7 @@
   outline: 0;
   background: #f6f6f6;
   width: 0;
-  line-height: 40px;
+  line-height: 35px;
   }
 
   .searchnav:hover > .search-input{
@@ -447,3 +449,8 @@ select.ht__select {
   height: 40px;
   font-size: 16px;
 }
+
+
+
+
+
