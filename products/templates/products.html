@@ -39,12 +39,14 @@
             {% for category in links %}
             <li><a href="{{category.get_url}}">{{category.name}}</a></li>
             {% endfor %}
+            <li><a href="{% url 'products' %}">All Products</a></li>
           </ul>
         </div>
       </div>
     </div>
+
     <div class="col-md-9">
-      <div class="row contact text-center pb-5">
+      <div class="row contact text-center pb-2">
         {% for product in products %}
         <div class="col-9 info-box mx-auto m-3 pb-0 col-md-6 col-lg-4">
           <div class="card mb-2" style="border-color: transparent;">
@@ -68,10 +70,22 @@
               </div>
             </div>
           </div>
+
         </div>
         {%endfor%}
+
+      </div>
+      <div class="paginate text-center pb-2">
+        {% if products.paginator.num_pages > 1 %}
+        {% for page_number in products.paginator.page_range %}
+        <a href="?page={{page_number}}"
+          class="btn btn-warning btn-sm {% if products.number == page_number %}active{% endif %}">
+          {{page_number}}</a>
+        {% endfor %}
+        {% endif %}
       </div>
     </div>
+
   </div>
 </div>
 

@@ -49,12 +49,20 @@
                   Add to Cart
                 </button>
               </a>
-
             </div>
           </div>
         </div>
       </div>
       {%endfor%}
+    </div>
+    <div class="paginate text-center pb-2">
+      {% if products.paginator.num_pages > 1 %}
+      {% for page_number in products.paginator.page_range %}
+      <a href="?page={{page_number}}"
+        class="btn btn-warning btn-sm {% if products.number == page_number %}active{% endif %}">
+        {{page_number}}</a>
+      {% endfor %}
+      {% endif %}
     </div>
 
 </section>
