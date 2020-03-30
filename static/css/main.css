@@ -36,13 +36,13 @@
   background: #f6f6f6;
   width: 0;
   line-height: 40px;
-  transition: width .2s;
   }
 
   .searchnav:hover > .search-input{
   padding: 0 5px;
   min-width: 200px;
-  transition: width .2s;
+  transition: width 2s;
+  transition-timing-function: linear;
   }
 
   .searchbar:hover > .search-icon{
@@ -387,7 +387,6 @@ select.ht__select {
 
 .contact .info-box {
   color: #444444;
-  text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px 10px 30px 10px;
   background: #fff;

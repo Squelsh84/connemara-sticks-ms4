@@ -28,23 +28,24 @@
   </div>
   <hr class="hr-primary w-15 hr-xl ml-0 mb-5">
   <!-- Start List Product -->
-  {% for product in products %}
-  <div class="ht__list__product col-12 mx-auto col-md-12 col-lg-12 mt-3">
-    <div class="ht__list__thumb">
-      <a href="{{product.get_url}}"><img class="img-products" src="{{product.image.url}}" alt="{{product.name}}"></a>
-    </div>
-    <div class="htc__list__details">
-      <h2><a href="product-details.html">{{product.name}}</a></h2>
-      <div class="price">
-        <h5 class="mt-4">€ {{product.price}}</h5>
+  <div class="container-fluid contact">
+    {% for product in products %}
+    <div class="ht__list__product col-12 mx-auto col-md-12 col-lg-12 m-3 info-box">
+      <div class="ht__list__thumb">
+        <a href="{{product.get_url}}"><img class="img-products" src="{{product.image.url}}" alt="{{product.name}}"></a>
       </div>
-      <p>{{product.description}}</p>
-      <div class="fr__list__btn">
-        <a class="btn btn-warning" href="{% url 'add_cart' product.id %}">Add To Cart</a>
+      <div class="htc__list__details">
+        <h2><a href="product-details.html">{{product.name}}</a></h2>
+        <div class="price">
+          <h5 class="mt-4">€ {{product.price}}</h5>
+        </div>
+        <p>{{product.description}}</p>
+        <div class="fr__list__btn">
+          <a class="btn btn-warning" href="{% url 'add_cart' product.id %}">Add To Cart</a>
+        </div>
       </div>
     </div>
-  </div>
-  {%endfor%}
+    {%endfor%}
   </div>
 </section>
 
