@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404
+from django.core.paginator import Paginator
 from .models import Post, Comment
 from .forms import CommentForm
 
@@ -7,7 +8,11 @@ from .forms import CommentForm
 
 def blogs(request):
     post_list = Post.objects.filter(status=1).order_by('-created_on')
-    return render(request, 'blogs.html', {"post_list": post_list})
+    paginator = Paginator(post_list, 3)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    context = {'title': 'Blog', 'page_obj': page_obj}
+    return render(request, 'blogs.html', context, {"post_list": post_list})
 
 
 def blog(request, slug):
@@ -29,8 +34,6 @@ def blog(request, slug):
         comment_form = CommentForm()
 
     return render(request, 'blog.html', {'post': post,
-                                                'comments': comments,
-                                                'new_comment': new_comment,
-                                                'comment_form': comment_form})
-
-
+                                         'comments': comments,
+                                         'new_comment': new_comment,
+                                         'comment_form': comment_form})
