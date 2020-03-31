@@ -44,10 +44,8 @@
               <div class="price text-success">
                 <h5 class="mt-4">€ {{product.price}}</h5>
               </div>
-              <a href="{% url 'add_cart' product.id %}">
-                <button type="button" name="button" class="btn btn-warning">
-                  Add to Cart
-                </button>
+              <a role="button" href="{% url 'add_cart' product.id %}" name="button" class="btn btn-warning">
+                Add to Cart
               </a>
             </div>
           </div>
@@ -64,11 +62,8 @@
       {% endfor %}
       {% endif %}
     </div>
-
+  </div>
 </section>
-
-
-
 
 <!-- Start Jumbotron Woods Section -->
 
@@ -77,10 +72,9 @@
     <div class="opaque-overlay">
       <h2 class="text-success">THERE IS A STORY<br> BEHIND EVERY<br>STICK</h2>
     </div>
-    <a type="button" href="{% url 'about' %}" class="btn btn-more btn-outline-success">FIND OUT MORE</a>
+    <a role="button" href="{% url 'about' %}" class="btn btn-more btn-outline-success">FIND OUT MORE</a>
   </div>
 </div>
-
 
 
 <!-- Features -->

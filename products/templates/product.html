@@ -8,10 +8,10 @@
 <div class="jumbotron jumbotron-product">
   <div class="container-fluid">
     <div class="opaque-overlay">
-      <h2></h2>
+      <h2>Product Details</h2>
     </div>
     <div>
-      <p></p>
+      <p>Made with the best raw materials.</p>
     </div>
   </div>
 </div>
@@ -35,31 +35,24 @@
       </div>
       <div class="col-lg-5 text-center text-md-left">
         <h2 class="h2-responsive text-center text-md-left product-name font-weight-bold mb-1 ml-xl-0 ml-4">
-          <h2><strong>{{product.name}}</strong></h2>
+          <strong>{{product.name}}</strong></h2>
 
-          <h5 class="product-price">€{{product.price}}</h5>
-          <!-- Ratings & Review -->
-          <div class="ratings-review mb-15 d-flex align-items-center justify-content-between">
-            <div class="review">
-              <a href="#">Write A Review</a>
-            </div>
-          </div>
-          <div class="size-font">
-            <h3>Length</h3>
-            <h5 class="size">{{product.length}} m</h5>
-          </div>
-          <div class="short_overview my-5">
-            <p>{{product.description}}</p>
-          </div>
-          {% if product.stock <= 0 %}
-          <p class="text-justify product_text"><b>Out of Stock</b></p>
-          {% else %}
-          <a href="{% url 'add_cart' product.id %}">
-            <button type="button" name="button" class="btn btn-warning">
-              Add to Cart
-            </button>
-          </a>
-          {% endif %}
+        <h5 class="product-price">€{{product.price}}</h5>
+
+        <div class="size-font">
+          <h3>Length</h3>
+          <h5 class="size">{{product.length}} m</h5>
+        </div>
+        <div class="short_overview my-5">
+          <p>{{product.description}}</p>
+        </div>
+        {% if product.stock <= 0 %}
+        <p class="text-justify product_text"><b>Out of Stock</b></p>
+        {% else %}
+        <a role="button" href="{% url 'add_cart' product.id %}" id="button" class="btn btn-warning">
+          Add to Cart
+        </a>
+        {% endif %}
       </div>
 
     </div>

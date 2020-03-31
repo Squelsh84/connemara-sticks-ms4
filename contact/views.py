@@ -17,7 +17,7 @@ def contact(request):
                 'New Contact',
                 'You have a new message.',
                 'mrmjtwalsh@gmail.com',
-                ['mjwalsh@gmail.com', ],
+                ['mrmjwalsh@gmail.com', ],
                 fail_silently=False,
             )
             messages.success(

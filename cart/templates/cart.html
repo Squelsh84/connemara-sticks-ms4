@@ -39,7 +39,7 @@
     <br>
     <h4 class="text-center">
       Please click <a href="{% url 'index' %}">here</a> to continue shopping
-      <h4>
+    </h4>
   </div>
 </div>
 {% else %}
@@ -47,7 +47,7 @@
   <h2>Checkout</h2>
 </div>
 <hr class="hr-primary">
-<div class="container contact ">
+<div class="container contact pb-4">
 
   <div class=" cart">
     <div class="card shopping-cart ">
@@ -124,10 +124,8 @@
       <a type="button" href="{% url 'index' %}" class="btn btn-lg btn-block bg-warning text-white">
         Continue Shopping
       </a>
-      </a>
     </div>
   </div>
-</div>
 </div>
 {% endif %}
 {% endblock %}

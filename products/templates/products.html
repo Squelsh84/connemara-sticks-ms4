@@ -59,10 +59,8 @@
                 <div class="price text-success">
                   <h5 class="mt-4">€ {{product.price}}</h5>
                 </div>
-                <a href="{% url 'add_cart' product.id %}">
-                  <button type="button" name="button" class="btn btn-warning">
-                    Add to Cart
-                  </button>
+                <a role="button" href="{% url 'add_cart' product.id %}" id="button" class="btn btn-warning">
+                  Add to Cart
                 </a>
 
               </div>
