@@ -16,15 +16,15 @@
 2. [Wireframes](#wireframe)
 
 3. [Features](#features)
-    -[Apps](#apps)
-       - [Home App](#home-app)
-       - [About App](#about-app)
-       - [Products App](#products-app)
-       - [Blog App](#blog-app)
-       - [Cart App](#cart-app)
-       - [Checkout](#checkout-app)
-       - [Accounts App](#accounts-app)
-       - [Contact App](#contact-app)
+    - [Apps](#apps)
+    - [Home App](#home-app)
+    - [About App](#about-app)
+    - [Products App](#products-app)
+    - [Blog App](#blog-app)
+    - [Cart App](#cart-app)
+    - [Checkout](#checkout-app)
+    - [Accounts App](#accounts-app)
+    - [Contact App](#contact-app)
     - [Future Features](#future-features)
   
 4. [Technologies Used](#technologies-used)
@@ -329,3 +329,5 @@ os.environ['ALLOWED_HOSTS']
 - [The Zero2Launch Team - Udemy Django](https://www.udemy.com/course/build-ecommerce-website-to-master-django-and-python/).
 
 ## Acknowledgements
+
+A massive thank you to my mentor Seun Owonikoko who guided me through my project especially during these strange times. To all the great people on Slack who give their time to answer peoples questions. So many problems I have encountered have already been answered by the wonderful people there.
