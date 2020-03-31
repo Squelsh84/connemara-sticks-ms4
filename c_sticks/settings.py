@@ -154,6 +154,14 @@ MEDIA_URL = '/media/'
 STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE')
 STRIPE_SECRET = os.getenv('STRIPE_SECRET')
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_PASSWORD')
+EMAIL_USE_TLS = True
+
+
 AWS_S3_OBJECT_PARAMETERS = {
     'Expires': 'Thu 31 Dec 2099 20:00:00 GMT',
     'CacheControl': 'max-age=94608000',
