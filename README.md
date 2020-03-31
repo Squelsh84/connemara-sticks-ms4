@@ -1,10 +1,10 @@
 [![Build Status](https://travis-ci.com/Squelsh84/connemara-sticks-ms4.svg?branch=master)](https://travis-ci.com/Squelsh84/connemara-sticks-ms4)
 
-# [Connemara Sticks]()
+# [Connemara Sticks](https://connemara-sticks.herokuapp.com/)
 
 - Please find a link to the live website [here](https://connemara-sticks.herokuapp.com/)
 
-![]()
+![Responsive Dashboard](https://github.com/Squelsh84/connemara-sticks-ms4/blob/master/static/images/website.jpg)
 
 ## Table of Contents
 
@@ -118,6 +118,7 @@ I decided to use balsamiq to create my mock-ups because it is easy to use and ga
 ### Home App
 
 The home app is the landing page of the website. It displays some of the business products as well as displaying some key features. There is also a jumbotron with a button to hopefully get customers to look around the site. The products are displayed three at a time with a paginator below the products to click to the next three. Also there is a scroll to top button which is only activated as the user scrolls down the page.
+The navbar dropdawn for sticks has been created in a way that if the business creates new categories the dropdown will update automatically.
 
 ### About App
 
