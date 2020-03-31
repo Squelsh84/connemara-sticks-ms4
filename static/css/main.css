@@ -46,9 +46,9 @@ html {
   .searchnav:hover > .search-input{
   padding: 0 5px;
   min-width: 200px;
-  -webkit-transition: width 2s;
-  -o-transition: width 2s;
-  transition: width 2s;
+  -webkit-transition: width 22s ease;
+  -o-transition: width 22s ease;
+  transition: width 22s ease;
   -webkit-transition-timing-function: linear;
        -o-transition-timing-function: linear;
           transition-timing-function: linear;
@@ -77,6 +77,7 @@ html {
   text-decoration:none;
   }
 
+  
 
 /*-- Home/Index --*/
 

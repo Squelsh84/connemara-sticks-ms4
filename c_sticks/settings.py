@@ -151,9 +151,15 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
 MEDIA_URL = '/media/'
 
+# Stripe
 STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE')
 STRIPE_SECRET = os.getenv('STRIPE_SECRET')
 
+
+# Email
+'''Credit: Corey Schafer
+https://www.youtube.com/watch?v=-tyBEsHSv7w&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p&index=13&t=1253s
+'''
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
@@ -161,7 +167,7 @@ EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_PASSWORD')
 EMAIL_USE_TLS = True
 
-
+# AWS S3
 AWS_S3_OBJECT_PARAMETERS = {
     'Expires': 'Thu 31 Dec 2099 20:00:00 GMT',
     'CacheControl': 'max-age=94608000',
@@ -178,4 +184,6 @@ AWS_DEFAULT_ACL = None
 
 STATICFILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
+
+# Crispy Forms
 CRISPY_TEMPLATE_PACK = 'bootstrap4'

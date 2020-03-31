@@ -8,6 +8,7 @@ from .forms import CommentForm
 
 def blogs(request):
     post_list = Post.objects.filter(status=1).order_by('-created_on')
+    # Display 3 products per page.
     paginator = Paginator(post_list, 3)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)

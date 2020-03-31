@@ -4,6 +4,11 @@ from django_summernote.admin import SummernoteModelAdmin
 
 # Register your models here.
 
+"""
+Summertime used to give the user more options when creating blog
+as it is has a lot of features.
+"""
+
 
 class PostAdmin(SummernoteModelAdmin):
     list_display = ('title', 'slug', 'status', 'created_on')
@@ -14,6 +19,10 @@ class PostAdmin(SummernoteModelAdmin):
     summernote_fields = ('content',)
 
 
+"""The list_display attribute does what its name suggests display
+ the properties mentioned in the tuple in the comments list
+  for each comment.
+"""
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
     list_display = ('name', 'body', 'post', 'created_on', 'active')
