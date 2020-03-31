@@ -137,10 +137,10 @@ padding-top: 1.5rem;
 }
 
 
-.jumbotron-product {
+.jumbotron-product, .jumbotron-register,
+.jumbotron-login {
   background: url('../images/craft.jpg') no-repeat bottom right fixed;
   background-size: cover;
- 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,7 +155,7 @@ padding-top: 1.5rem;
 }
 
 
-.jumbotron-about {
+.jumbotron-about, .jumbotron-cart {
   background: url('../images/about.jpg') no-repeat bottom right fixed;
   background-size: cover;
   display: -webkit-box;
@@ -205,7 +205,7 @@ padding-top: 1.5rem;
   height: 60vh; 
 }
 
-.jumbotron-contact {
+.jumbotron-contact, .jumbotron-thanks {
   background: url('../images/contact.jpg') no-repeat bottom right fixed;
   background-size: cover;
   display: -webkit-box;

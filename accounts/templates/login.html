@@ -1,13 +1,14 @@
 {% extends 'base.html' %}
 {% load static %}
 {% load crispy_forms_tags %}
-{% block title %}
-Log in
-{% endblock %}
+
+{% block title %} Log in {% endblock %}
 
 {% block content %}
 
-<div class="jumbotron jumbotron-product">
+
+<!--  Jumbotron login-->
+<div class="jumbotron jumbotron-login">
   <div class="container-fluid">
     <div class="opaque-overlay">
       <h2>Login</h2>
@@ -19,7 +20,7 @@ Log in
 </div>
 
 
-
+<!-- Create Account  -->
 <div class="container">
   <br>
   <h1 class="product_title text-center">
@@ -52,7 +53,6 @@ Log in
       </div>
     </div>
   </div>
-  <br>
 </div>
-<br>
+
 {% endblock %}

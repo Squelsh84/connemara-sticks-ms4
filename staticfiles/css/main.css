@@ -46,9 +46,9 @@ html {
   .searchnav:hover > .search-input{
   padding: 0 5px;
   min-width: 200px;
-  -webkit-transition: width 2s;
-  -o-transition: width 2s;
-  transition: width 2s;
+  -webkit-transition: width 22s ease;
+  -o-transition: width 22s ease;
+  transition: width 22s ease;
   -webkit-transition-timing-function: linear;
        -o-transition-timing-function: linear;
           transition-timing-function: linear;
@@ -77,6 +77,7 @@ html {
   text-decoration:none;
   }
 
+  
 
 /*-- Home/Index --*/
 
@@ -136,10 +137,10 @@ padding-top: 1.5rem;
 }
 
 
-.jumbotron-product {
+.jumbotron-product, .jumbotron-register,
+.jumbotron-login {
   background: url('../images/craft.jpg') no-repeat bottom right fixed;
   background-size: cover;
- 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,7 +155,7 @@ padding-top: 1.5rem;
 }
 
 
-.jumbotron-about {
+.jumbotron-about, .jumbotron-cart {
   background: url('../images/about.jpg') no-repeat bottom right fixed;
   background-size: cover;
   display: -webkit-box;
@@ -204,7 +205,7 @@ padding-top: 1.5rem;
   height: 60vh; 
 }
 
-.jumbotron-contact {
+.jumbotron-contact, .jumbotron-thanks {
   background: url('../images/contact.jpg') no-repeat bottom right fixed;
   background-size: cover;
   display: -webkit-box;
