@@ -101,13 +101,15 @@ I want to be know and choose what wood I want it to be.
 
 ### Theme
 
-### Typography
+The original inspiration for the theme design came from [manufactura bold theme](http://manufactura.bold-themes.com/main-demo/home/home-v1/). I really liked the layout of the theme and how it flowed. Also the images of the are strong and work well with the theme. Also I felt that keeping the site simple and not overcrowded let the images of the sticks sell themselves.
 
+### Typography & Fonts
 
+Trying to keep with the theme of nature and wood, my color scheme I hope helps represent this with the use of green, brown and yellow. I choose to use Old Standard TT and Poppins as I believe they look well on the site.
 
 # Wireframe
 
-
+I decided to use balsamiq to create my mock-ups because it is easy to use and gave me a real visual of what I wanted to implement. The mockups are designed on different sized screens and can be found [here](https://github.com/Squelsh84/connemara-sticks-ms4/blob/master/wireframe/connemara-sticks.pdf) in the wireframe folder.
 
 # Features
 
@@ -230,7 +232,7 @@ The following instructions to clone and deploy assume the user has:
 
 The following instructions were taken from [GitHib Help]( https://help.github.com/en/articles/cloning-a-repository).
 
-1. Open the []() repository.
+1. Open the [connemara-sticks-ms4](https://github.com/Squelsh84/connemara-sticks-ms4) repository.
 2. Click the --clone or download-- button.
 3. In the --clone with HTTPs-- pop-up, click the --copy icon--.
 4. Open --git bash--.
@@ -259,7 +261,7 @@ The following instructions were taken from [GitHib Help]( https://help.github.co
 ## Content
 
 - Some information was taken from [Stickmaking Handbook](https://www.ebay.co.uk/itm/174162686143)
-- Images were taken from [pixabay](https://pixabay.com/)
+- Images were taken from [pixabay](https://pixabay.com/)and [manufactura website](http://manufactura.bold-themes.com/main-demo/home/home-v1/).
   
 ## Code
 
