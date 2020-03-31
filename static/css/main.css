@@ -2,6 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700|Poppins:400,700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
 
 .body {
   overflow-x: hidden;
@@ -81,7 +84,6 @@
 padding-top: 1.5rem;
 }
 
-
 .feature {
   text-align: center;
   margin-bottom: 40px;
@@ -94,15 +96,6 @@ padding-top: 1.5rem;
   color: #B28564;
 }
 
-.feature .btn {
-  background-color: white;
-  border-color: white;
-  border-radius: 15px;
-  min-width: 100px;
-  font-weight: bold;
-  margin-top: 1px;
-  color: #f05f40;
-}
 
 .container-product {
   padding-bottom: 10px;
@@ -367,7 +360,7 @@ padding-top: 1.5rem;
 
 .footer-dark .item.social > a {
   font-size:28px;
-  color: rgba(253, 193, 52, 1);
+  color: #fff;
   width:40px;
   height:40px;
   line-height:40px;
@@ -381,7 +374,8 @@ padding-top: 1.5rem;
 }
 
 .footer-dark .item.social > a:hover {
-  opacity:0.9;
+  opacity:0.7;
+  color: #fdc134;
 }
 
 .footer-dark .copyright {
@@ -390,4 +384,33 @@ padding-top: 1.5rem;
   opacity:0.3;
   font-size:13px;
   margin-bottom:0;
+}
+
+
+/*---- BACK-TO-TOP  ----*/
+
+#back-to-top{
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #fdc134; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+
+#back-to-top:hover {
+  cursor: pointer;
+}
+
+#back-to-top.show {
+  opacity: 1;
+  visibility: visible;
 }

@@ -99,6 +99,9 @@
     </div>
   </nav>
 
+
+
+
   <!--MESSAGES-->
   {% if messages %}
   {% for message in messages %}
@@ -108,10 +111,14 @@
   {% endfor %}
   {% endif %}
 
-
+  <!-- Button to scroll back up the page -->
+  <button onclick="topFunction()" class=" btn btn-warning" id="back-to-top"><i class="fas fa-arrow-up"></i></button>
   <!--MAIN BLOCK CONTENT-->
 
-  {% block content %}{% endblock %}
+  {% block content %}
+
+
+  {% endblock %}
 
   <!-- Footer -->
   <footer class="footer-bg-dark footer-dark fixed" id="footer">
