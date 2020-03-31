@@ -71,7 +71,7 @@ I want to be able to write about stickmaking and other topics.
 
 ### Owners Story 4
 
-I want to be able to recieve payment on sticks sold and to be emailed when one is sold.
+I want to be able to recieve payment on sticks sold and the system to be updated on quantity.
 
 ## User Stories
 
@@ -79,7 +79,7 @@ Customer.
 
 ### User Story 1
 
-I want to be able to see the previous work that has been carried out.
+I want to be able to see  work that has been carried out and is available to purchase.
 
 ### User Story 2
 
@@ -95,7 +95,7 @@ I want to be able to make a payment by card on the site.
 
 ### User Story 5
 
-I want to be know and choose what wood I want it to be.
+I want to know about their guarantee and choose what wood I want it to be.
 
 ## Design
 
@@ -207,6 +207,8 @@ Area on checout page to estimate shipping costs.
 
 ## User Testing
 
+The website was constantly tested by [Travis CI](https://travis-ci.com/) each time it was pushed to git.
+
 The website was shared with friends and family to test. When testing there were some issues with design. The checkout was stretching and causing issues on smaller screens. To fix this i decided to great a one column checkout instead of the original two.
 Another issue was theat there was alot of over lapping on smaller screens. To fix this issue I added padding to tags for when it was needed. Also I had forgotten to add a back to shopping link after a purchase was made.
 
@@ -235,6 +237,7 @@ During testing I found some bugs in the site.
 - Search bar is not working on larger screens but will work on mobile devices. I still have not resolved this issue as I have run out of time.
 - The contact page is sending an email but is not sending the information.
 - The stripe payment was giving issues depending on the address but this resolved itself after deleting and recreating the code.
+- Search bar is not easing in and out as its supposed to.
 
 ## Validators
 
@@ -316,7 +319,7 @@ os.environ['ALLOWED_HOSTS']
 ## Content
 
 - Some information was taken from [Stickmaking Handbook](https://www.ebay.co.uk/itm/174162686143)
-- Images were taken from [pixabay](https://pixabay.com/)and [manufactura website](http://manufactura.bold-themes.com/main-demo/home/home-v1/).
+- Images were taken from [pixabay](https://pixabay.com/) and [manufactura website](http://manufactura.bold-themes.com/main-demo/home/home-v1/).
   
 ## Code
 
@@ -328,7 +331,8 @@ os.environ['ALLOWED_HOSTS']
 - [Coding Point - Django Ecommerce Web App](https://www.youtube.com/playlist?list=PLPp4GCMxKSjCM9AvhmF9OHyyaJsN8rsZK).
 - [Pretty Printed - YouTube Django Playlist](https://www.youtube.com/watch?v=QVX-etwgvJ8&list=PLXmMXHVSvS-DQfOsQdXkzEZyD0Vei7PKf&index=1).
 - [The Zero2Launch Team - Udemy Django](https://www.udemy.com/course/build-ecommerce-website-to-master-django-and-python/).
-
+- [Boostrap Blog Starter Page](https://github.com/BlackrockDigital/startbootstrap-blog-home).
+  
 ## Acknowledgements
 
 A massive thank you to my mentor Seun Owonikoko who guided me through my project especially during these strange times. To all the great people on Slack who give their time to answer peoples questions. So many problems I have encountered have already been answered by the wonderful people there.
