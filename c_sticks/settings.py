@@ -150,7 +150,7 @@ STATICFILES_DIRS = [
 ]
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, MEDIAFILES_LOCATION)
+MEDIA_URL = '/media/'
 
 # Stripe
 STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE')
@@ -186,6 +186,5 @@ STATICFILES_STORAGE = 'custom_storages.StaticStorage'
 
 MEDIAFILES_LOCATION = 'media'
 DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
-
 # Crispy Forms
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
