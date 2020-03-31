@@ -99,15 +99,47 @@
     </div>
   </nav>
 
+  <!--MESSAGES-->
+  {% if messages %}
+  {% for message in messages %}
+  <div class="d-block alert-info text-center message--{{ message.tags }}">
+    {{ message }}
+  </div>
+  {% endfor %}
+  {% endif %}
 
 
   <!--MAIN BLOCK CONTENT-->
 
   {% block content %}{% endblock %}
 
-  <footer id="sticky-footer" class="py-4 bg-dark  text-white-50">
-    <div class="container text-center">
-      <small>Copyright &copy; Mark Walsh</small>
+  <!-- Footer -->
+  <footer class="footer-bg-dark footer-dark fixed" id="footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-6 col-md-6 item">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="https://www.irishtrails.ie/" target="_blank">Irish trails</a></li>
+            <li><a href="https://www.forestryfocus.ie/forests-woodland/forests-of-ireland/" target="_blank">Forests of
+                Ireland
+              </a></li>
+            <li><a href="https://shamrocksandshells.wordpress.com/" target="_blank">Camino Society of Ireland</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 item text">
+          <h3>Connemara Sticks</h3>
+          <p>This is a fourth generation, family-owned Stickmaking business. All sticks have been carefully cut and
+            season by ourselves to ensure that we have the best raw material to produce unique and beautiful pieces.</p>
+        </div>
+        <div class="col item social">
+          <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/connemara_sticks/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <p class="copyright text-center">Mark Walsh © 2020</p>
     </div>
   </footer>
 
